@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a; 
+    int b;
+    char znak;
+    scanf("%d%c%d", &a, &znak, &b);
+    switch(znak){
+        case '+':
+            printf("%d",a+b); break; 
+        case '-':
+            printf("%d",a-b); break;
+        case '/':
+            printf("%f",a*1.0/b*1.0); break; 
+        case '*':
+            printf("%d",a*b); break;
+        case '^':
+            printf("%f", pow(a*1.0,b)); break; 
+        default : printf("обшыбка"); break;
+
+    }
+    return 0;
+}
